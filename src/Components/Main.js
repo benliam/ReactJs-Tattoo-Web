@@ -11,13 +11,13 @@ import 'bootstrap/dist/js/bootstrap.js'
 
 
 /* Components */
-import Home from './Components/Home';
-import About from './Components/About';
-import Contact from './Components/Contact';
-import PageNotFound from './Components/PageNotFound';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+import PageNotFound from './PageNotFound';
 
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 
 

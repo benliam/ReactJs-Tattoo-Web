@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 
 
-import Slide from '@/images/slide2.png';
+import Slide from '../images/slide2.png';
 
 export class Home extends Component {
  render() {
