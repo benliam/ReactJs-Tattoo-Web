@@ -7,11 +7,7 @@
     "build": "webpack",
     "dev": "webpack serve --liveReload",
     "production": "webpack --mode production",
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": "12.x",
-    "npm": "6.x",
+    "start": "node App.js"
   },
   "author": "Liam Ng",
   "license": "ISC",
@@ -37,6 +33,10 @@
     "typi": "^3.2.0",
     "url-replace-loader": "^1.0.0",
     "vanilla-tilt": "^1.7.1"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
