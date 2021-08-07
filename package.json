@@ -9,6 +9,9 @@
     "production": "webpack --mode production",
     "start": "node server.js"
   },
+  "engines": {
+    "npm": "6.x"
+  },
   "author": "Liam Ng",
   "license": "ISC",
   "dependencies": {
@@ -54,6 +57,7 @@
     "resolve-url-loader": "^4.0.0",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
+    "terser": "^3.14.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.49.0",
     "webpack-cli": "^4.7.2",
