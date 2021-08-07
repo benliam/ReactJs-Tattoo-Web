@@ -28,6 +28,7 @@ output: {
 
  devServer: {
    contentBase: path.join(__dirname, './'), // where dev server will look for static files, not compiled
+   publicPath: '/', //relative path to output path where  devserver will look for compiled files
    hot: true,
    open: true,
    liveReload: true,
@@ -53,49 +54,39 @@ output: {
         test: /\.pug$/,
         use: [ 'babel-loader', 'pug-as-jsx-loader' ]
     },
-   {
-      test: /\.(sa|sc|c)ss$/,
-      use: [
-          {
-              loader: MiniCssExtractPlugin.loader
-          },
-          {
-               loader: 'css-loader'
-          },
-          {
-               loader: 'postcss-loader'
-          },
-          {
-              loader: 'resolve-url-loader'
-          },
-          {
-              loader: 'sass-loader',
-          }
-                ]
-   },
-   { // config for images
+     { // config for sass compilation
+       test: /\.(sa|sc|c)ss$/,
+       use: [
+         {
+           loader: MiniCssExtractPlugin.loader
+         },
+         'css-loader',
+         {
+           loader: "sass-loader",
+         }
+       ]
+     },
+     { // config for images
        test: /\.(png|svg|jpg|jpeg|gif)$/,
        use: [
          {
            loader: 'file-loader',
            options: {
-             name: '[name].[ext]',
              outputPath: 'images',
            }
          }
        ],
-    },
-    {
-    test: /\.(woff|woff2|ttf|otf|eot)$/,
-       use: [
-                {
-              loader: 'file-loader',
-               options: {
-               name: '[name].[ext]',
-               outputPath: 'fonts'
-                 }
-               }
-            ]
+     },
+       {
+                test: /\.(woff|woff2|ttf|otf|eot)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            outputPath: 'fonts'
+                        }
+                    }
+                ]
       },
 
    ]
@@ -105,12 +96,10 @@ output: {
    new HtmlWebpackPlugin({ 
      template: "./src/index.html",
      filename: "index.html",
-     publicPath: "/",
-     title: "Benz.Tattoo Design",// plugin for inserting scripts into html
-     favicon: './src/favicon/benz-logo-icon-180.png'
+     title: "Learning Webpack"// plugin for inserting scripts into html
    }),
    new MiniCssExtractPlugin({ // plugin for controlling how compiled css will be outputted and named
-     filename: "css/[name].[chunkhash].css",
+     filename: "css/[name].css",
      chunkFilename: "css/[id].css"
    }),
    new CleanWebpackPlugin({

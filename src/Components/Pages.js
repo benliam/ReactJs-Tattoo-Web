@@ -34,6 +34,9 @@ export class Main extends Component {
 		     	  <Route component={PageNotFound} />
 		   	 	</Switch>
 	   	 	<Footer />
+	   	 	<Switch>
+		     	  <Route component={PageNotFound} />
+		   	 </Switch>
    	 	</div>
    )
  }
