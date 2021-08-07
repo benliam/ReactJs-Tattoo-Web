@@ -10,7 +10,8 @@
     "start": "node server.js"
   },
   "engines": {
-    "npm": "6.x"
+    "node": "12.x",
+    "npm": "6.x",
   },
   "author": "Liam Ng",
   "license": "ISC",
