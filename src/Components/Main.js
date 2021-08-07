@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom'
 
 //import '@/sass/index.scss';
-import '@/js/functions'
-import '@/sass/index.scss'
-import '@/images/bootstrap-icons.svg'
+import '../js/functions'
+import '../sass/index.scss'
+import '../images/bootstrap-icons.svg'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 
 
 /* Components */
-import Home from '@/Components/Home';
-import About from '@/Components/About';
-import Contact from '@/Components/Contact';
-import PageNotFound from '@/Components/PageNotFound';
+import Home from './Components/Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import PageNotFound from './Components/PageNotFound';
 
-import Header from '@/Components/Header';
-import Footer from '@/Components/Footer';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 
 
