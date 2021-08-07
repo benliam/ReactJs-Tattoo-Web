@@ -6,10 +6,9 @@
   "scripts": {
     "heroku-prebuild": "npm install --dev",
     "build": "webpack --mode production",
-    "start": "node App.js",
     "dev": "webpack serve --liveReload",
     "production": "webpack --mode production",
-    
+    "start": "node App.js"
   },
   "author": "Liam Ng",
   "license": "ISC",
