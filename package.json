@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "webpack",
+     "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
+     "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production; webpack",
     "build": "webpack",
     "dev": "webpack serve --liveReload",
     "production": "webpack --mode production",
@@ -16,8 +17,8 @@
   },
   "author": "Liam Ng",
   "license": "ISC",
-  "dependencies": {
-    "@barba/core": "^2.9.7",
+ "dependencies": {
+   "@babel/core": "^7.15.0",
     "@barba/css": "^2.1.15",
     "@glidejs/glide": "^3.4.1",
     "bootstrap": "^5.0.2",
@@ -37,9 +38,33 @@
     "typed.js": "^2.0.12",
     "typi": "^3.2.0",
     "url-replace-loader": "^1.0.0",
-    "vanilla-tilt": "^1.7.1"
+    "vanilla-tilt": "^1.7.1",
   },
   "devDependencies": {
-    
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-react-pug": "^7.0.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "csv-loader": "^3.0.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "node-sass": "^6.0.1",
+    "papaparse": "^5.3.1",
+    "postcss-loader": "^6.1.1",
+    "pug-as-jsx-loader": "^1.0.88",
+    "react-router-dom": "^5.2.0",
+    "resolve-url-loader": "^4.0.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "terser": "^3.14.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "xml-loader": "^1.2.1"
   }
 }
