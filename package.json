@@ -8,7 +8,11 @@
     "build": "webpack",
     "dev": "webpack serve --liveReload",
     "production": "webpack --mode production",
-    "start": "node server.js",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
   },
   "author": "Liam Ng",
   "license": "ISC",
@@ -47,11 +51,7 @@
     "csv-loader": "^3.0.3",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^2.2.0",
-  },
-  "engines": {
-    "node": "12.x",
-    "npm": "6.x"
+    "mini-css-extract-plugin": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
