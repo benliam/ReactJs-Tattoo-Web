@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter,HashRouter } from 'react-router-dom';
 
 /** Components */
-import Main from "@/components/Main";
+import Main from "./Components/Main";
 
 
 ReactDOM.render(
