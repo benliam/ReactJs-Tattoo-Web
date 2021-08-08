@@ -27,7 +27,7 @@ output: {
   },
 
  devServer: {
-   contentBase: path.join(__dirname, './dist'), // where dev server will look for static files, not compiled
+   contentBase: path.join(__dirname, './'), // where dev server will look for static files, not compiled
    hot: true,
    open: true,
    liveReload: true,
