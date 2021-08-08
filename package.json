@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
-     "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production; webpack",
+    "heroku-postbuild": "webpack",
     "build": "webpack",
     "dev": "webpack serve --liveReload",
     "production": "webpack --mode production",
@@ -17,7 +16,7 @@
   },
   "author": "Liam Ng",
   "license": "ISC",
- "dependencies": {
+  "dependencies": {
    "@babel/core": "^7.15.0",
     "@barba/css": "^2.1.15",
     "@glidejs/glide": "^3.4.1",
@@ -39,13 +38,9 @@
     "typi": "^3.2.0",
     "url-replace-loader": "^1.0.0",
     "vanilla-tilt": "^1.7.1",
-  },
-  "devDependencies": {
-    "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
-    "babel-plugin-transform-react-pug": "^7.0.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^6.2.0",
     "csv-loader": "^3.0.3",
@@ -65,6 +60,5 @@
     "webpack": "^5.49.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
-    "xml-loader": "^1.2.1"
   }
 }
