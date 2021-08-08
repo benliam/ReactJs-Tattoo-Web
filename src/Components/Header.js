@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import {Link} from 'react-router-dom';
 
-import Logo from '../images/logos/logo-white.svg';
+import Logo from '../images/logos/benz-logo.png';
 
 export class Header extends Component {
  render() {
