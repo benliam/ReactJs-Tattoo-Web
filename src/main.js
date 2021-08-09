@@ -10,6 +10,6 @@ import Main from "./Components/Main";
 ReactDOM.render(
   <BrowserRouter>
     <Main />
-  </BrowserRouter>,
+</BrowserRouter>,
   document.getElementById('app')
 );
