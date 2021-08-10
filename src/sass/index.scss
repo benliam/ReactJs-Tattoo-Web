@@ -21,7 +21,9 @@
 
 */
 
-@import // 00. fonts
+@import 
+        'custom.css', 
+        // 00. fonts
         '../fonts/inter/inter', 
         // 01. variables
         'partials/variables', 

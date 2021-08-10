@@ -32,7 +32,7 @@ export class Home extends Component {
               </li>
               <li className="glide__slide">
                 <div className="jumbotron jumbotron-fluid vh-100 d-flex align-items-end">
-                  <div className="bg o-4" style={{backgroundImage: `url(${Slide})` }}  />
+                  <div className="bg o-8" style={{backgroundImage: `url(${Slide})` }}  />
                   <div className="container-fluid py-6"><a className="tilt no-link" href="project-single.html">
                       <h6>Branding</h6>
                       <h1 className="massive"><span className="d-block">Diamond</span><span className="d-block">Serenity</span></h1>

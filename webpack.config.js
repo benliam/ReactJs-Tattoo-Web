@@ -4,8 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-
-
 module.exports = {
  mode: "development",
 
@@ -122,7 +120,5 @@ output: {
     'window.$': 'jquery',
     'window.jQuery': 'jquery'
   })
- ],
-
-
+ ]
 };

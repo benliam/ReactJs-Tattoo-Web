@@ -4,12 +4,12 @@ import ReactDOM from "react-dom";
 import { BrowserRouter,HashRouter } from 'react-router-dom';
 
 /** Components */
-import Main from "./Components/Main";
+import App from "./Components/App";
 
 
 ReactDOM.render(
   <BrowserRouter>
-    <Main />
-</BrowserRouter>,
+	 <App />
+ </BrowserRouter>,
   document.getElementById('app')
 );

@@ -3,7 +3,6 @@ import imagesLoaded from 'imagesloaded'
 import { Lightbox } from './lightbox'
 import { Slider } from './slider'
 import { Cursor } from './cursor'
-import VanillaTilt from 'vanilla-tilt'
 import Typed from 'typed.js'
 
 var iso
@@ -34,18 +33,7 @@ var Main = () => {
         })
     }
 
-    VanillaTilt.init(document.querySelectorAll('.tilt'), {
-        speed: 1000,
-        max: 5
-    });
 
-    VanillaTilt.init(document.querySelectorAll('.btn'), {
-        speed: 2000,
-        max: 2,
-        "max-glare": 1,
-        glare: true
-    });
-    
     var scrollObject = {
         y: window.pageYOffset
     }

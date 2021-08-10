@@ -2,7 +2,7 @@ var Cursor = () => {
 
     var existingCursor = document.getElementById('cursor')
     var cursor = document.createElement('div')
-    var activeElements = document.querySelectorAll('a:not(.lightbox), .btn, .burger, button, accordion-trigger')
+    var activeElements = document.querySelectorAll('a:not(.lightbox), .btn, .burger, accordion-trigger')
     var inputElements = document.querySelectorAll('input[type=text], input[type=email], textarea')
     
     cursor.setAttribute('id', 'cursor')
